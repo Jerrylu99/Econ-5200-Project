@@ -1,19 +1,25 @@
-# ECON 5200 Project
+# ECON 5200 Data Project
 
-## Paper
-Card, D., & Krueger, A. (1994). 
-Minimum Wages and Employment: A Case Study of the Fast-Food Industry in New Jersey and Pennsylvania. 
-American Economic Review.
+This repository contains the replication project for ECON 5200.
 
-## Research Question
-This project replicates the empirical analysis of Card and Krueger (1994).  
-The paper studies whether an increase in the minimum wage reduces employment in the fast-food industry.  
-Using survey data from restaurants in New Jersey and Pennsylvania, the authors test the causal effect of the minimum wage change on employment.
+The project replicates the Difference-in-Differences (DID) analysis from:
+
+Card, D. and Krueger, A. (1994). Minimum Wages and Employment: A Case Study of the Fast-Food Industry in New Jersey and Pennsylvania.
 
 ## Repository Structure
 
-data/raw  
-Contains the original dataset (public.dat).
+data/
+- raw/ : original dataset
+- processed/ : cleaned dataset
 
-notebooks  
-01_Data_Cleaning.ipynb loads and inspects the raw dataset.
+notebooks/
+- 01_Data_Cleaning.ipynb : data cleaning and preparation
+- 02_Replication_Analysis.ipynb : DID replication analysis
+
+## Data
+
+The dataset contains survey information from fast-food restaurants in New Jersey and Pennsylvania before and after the minimum wage increase.
+
+## Method
+
+The analysis applies a Difference-in-Differences (DID) framework comparing employment changes between New Jersey (treatment group) and Pennsylvania (control group).
